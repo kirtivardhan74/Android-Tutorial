@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kriti.tutorial.Profile">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heloo user"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="140dp"
+        android:layout_alignTop="@+id/welcome_text"
+        android:layout_alignStart="@+id/welcome_text"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/choose_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="choose"
+        android:layout_below="@+id/logout_btn"
+        android:layout_toStartOf="@+id/logout_btn"
+        android:layout_marginEnd="25dp" />
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/choose_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/imageView_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        app:srcCompat="@drawable/java" />
+</RelativeLayout>

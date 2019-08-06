@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kriti.tutorial.Firebasedlog">
+
+
+    <TextView
+        android:id="@+id/user_login_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_email_text"
+        android:layout_alignStart="@+id/login_email_text"
+        android:layout_marginBottom="55dp"
+        android:layout_marginStart="49dp"
+        android:text="Login"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/login_email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Login_btn"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/login_pass_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/login_email_text"
+        android:hint="password"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/Login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_pass_text"
+        android:layout_marginTop="62dp"
+        android:layout_toEndOf="@+id/user_login_head"
+        android:text="Sign In" />
+
+    <TextView
+        android:id="@+id/next_register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Login_btn"
+        android:layout_below="@+id/Login_btn"
+        android:layout_marginTop="27dp"
+        android:text="No account?Create one" />
+
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kriti.tutorial.MainActivity">
+
+
+    <TextView
+        android:id="@+id/sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Tutorial"
+        android:textColor="#0000FF"
+        android:textSize="23dp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="39dp"
+        android:layout_above="@+id/edit_userid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Id"
+        android:textColor="#AB2342"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="112dp"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/editpassword"
+        android:layout_toStartOf="@+id/sms" />
+
+    <EditText
+        android:id="@+id/edit_userid"
+        android:layout_width="219dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Enter your register mail"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="141dp"
+        android:layout_marginEnd="21dp"
+        android:layout_alignBottom="@+id/userid"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#AB2342"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="221dp"
+        android:layout_marginBottom="76dp"
+        android:layout_above="@+id/login"
+        android:layout_alignEnd="@+id/userid" />
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_layers_black_24dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="246dp"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignEnd="@+id/edit_userid" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="117dp"
+        android:layout_height="45dp"
+        android:background="#0119FF"
+        android:text="LOG IN"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="321dp"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/newuser"
+        android:layout_alignStart="@+id/newuser" />
+
+    <TextView
+        android:id="@+id/newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[New User] Register here"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="384dp"
+        android:layout_marginBottom="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/password" />
+
+</RelativeLayout>

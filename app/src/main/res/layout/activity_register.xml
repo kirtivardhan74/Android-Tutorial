@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kriti.studemge.Register">
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="86dp"
+        android:layout_height="30dp"
+        android:text="Name"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="85dp"
+        android:layout_marginStart="37dp"
+        android:layout_alignBottom="@+id/etnamer"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_alignBottom="@+id/etemailr"
+        android:layout_alignStart="@+id/tvname"
+        android:layout_alignEnd="@+id/tvname" />
+
+    <TextView
+        android:id="@+id/tvpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteY="226dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_alignBottom="@+id/etpassr"
+        android:layout_alignStart="@+id/tvemail" />
+
+    <EditText
+        android:id="@+id/etnamer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvregister"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/etemailr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteY="136dp"
+        tools:layout_editor_absoluteX="153dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/etnamer"
+        android:layout_alignStart="@+id/etpassr" />
+
+    <EditText
+        android:id="@+id/etpassr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="200dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/tvphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etphoner"
+        android:layout_alignStart="@+id/tvpass"
+        android:text="Phone"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <EditText
+        android:id="@+id/etphoner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter your phone no."
+        tools:layout_editor_absoluteY="269dp"
+        tools:layout_editor_absoluteX="153dp"
+        android:layout_below="@+id/etpassr"
+        android:layout_alignStart="@+id/etpassr"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:id="@+id/tvregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Page"
+        android:textColor="#AB2345"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="142dp"
+        android:layout_height="44dp"
+        android:layout_alignBottom="@+id/loginback"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="73dp"
+        android:layout_toEndOf="@+id/tvname"
+        android:background="#0119FF"
+        android:text="Register"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:id="@+id/loginback"
+        android:layout_width="213dp"
+        android:layout_height="28dp"
+        android:text="Already registerd? Login here"
+        android:textColor="#AB2345"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="433dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/text_show_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/loginback"
+        android:layout_alignEnd="@+id/tvpass"
+        android:text="Show data" />
+</RelativeLayout>

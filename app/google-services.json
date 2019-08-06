@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741727960032",
+    "firebase_url": "https://tutorial-72e7a.firebaseio.com",
+    "project_id": "tutorial-72e7a",
+    "storage_bucket": "tutorial-72e7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741727960032:android:f41489deab0ffe41",
+        "android_client_info": {
+          "package_name": "kriti.Tutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741727960032-cb3mlt5g4n8mp9v35epcqjb3g3d2281p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kriti.Tutorial",
+            "certificate_hash": "0d3db25cd6dbc69c7409888b0aed7111d96f9043"
+          }
+        },
+        {
+          "client_id": "741727960032-08o8ilpoigskghij76iqaqo84l9l0as3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLGRRdnsGnvobZWa8nHrR7TQxZjV1WNBA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741727960032-08o8ilpoigskghij76iqaqo84l9l0as3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

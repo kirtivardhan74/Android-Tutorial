@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kriti.tutorial.navigation">
+
+
+    <Button
+        android:id="@+id/Radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:text="Radio"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Radio"
+        android:layout_below="@+id/Radio"
+        android:layout_marginTop="27dp"
+        android:text="checkbox" />
+
+    <Button
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="animation"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/check"
+        android:layout_alignEnd="@+id/check" />
+
+    <Button
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check"
+        android:layout_below="@+id/animation"
+        android:layout_marginTop="45dp"
+        android:text="image view" />
+
+    <Button
+        android:id="@+id/recyclercard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:text="Recycle View"
+        android:layout_alignBaseline="@+id/Radio"
+        android:layout_alignBottom="@+id/Radio"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/seeked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="seek baar"
+        android:layout_alignTop="@+id/check"
+        android:layout_alignStart="@+id/recyclercard" />
+
+    <Button
+        android:id="@+id/dater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date picker"
+        android:layout_alignBaseline="@+id/animation"
+        android:layout_alignBottom="@+id/animation"
+        android:layout_alignStart="@+id/seeked" />
+
+    <Button
+        android:id="@+id/timed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time picker"
+        android:layout_alignBaseline="@+id/img"
+        android:layout_alignBottom="@+id/img"
+        android:layout_alignEnd="@+id/dater" />
+
+    <Button
+        android:id="@+id/spined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="37dp"
+        android:text="Spinner" />
+
+    <Button
+        android:id="@+id/intented"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seeked"
+        android:layout_alignTop="@+id/spined"
+        android:text="intent button" />
+
+    <Button
+        android:id="@+id/fired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/intented"
+        android:text="FireBase" />
+
+    <Button
+        android:id="@+id/frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/img"
+        android:text="Fragmentation" />
+
+
+</RelativeLayout>
